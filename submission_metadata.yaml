@@ -1,0 +1,65 @@
+# declarations are complete; identity, GitHub, and sandbox URLs are team-specific.
+
+team_name: "AIxTwilight"
+
+primary_contact:
+  name: "Manpreetkaur Sachdev"
+  email: "manpreetkaursachdev2006@gmail.com"
+  phone: "+91 9112365315"
+
+
+team_members:
+  - name: "Manpreetkaur Sachdev"
+    email: "manpreetkaursachdev2006@gmail.com"
+    role: "AI/ML Engineer"
+
+  - name: "Sahil MK Bharati"
+    email: "aixtwilight@gmail.com"
+    role: "AI/ML Engineer"
+
+  - name: "Ayush Katakwar"
+    email: "ayushkatakwar9011@gmail.com"
+    role: "AI/ML Engineer"
+
+
+github_repo: "https://github.com/aixtwilight/Candidate_Ranking_System"
+sandbox_link: "https://huggingface.co/spaces/TODO_USERNAME/redrob-ranker"
+reproduce_command: "python3 rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local macOS arm64 workstation"
+  cpu_cores: 8
+  ram_gb: 8
+  python_version: "3.14.6"
+  os: "macOS 26.5.1"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "ChatGPT"
+  - "Claude"
+
+ai_usage_summary: |
+  Used ChatGPT/Codex to inspect the challenge docs, implement and review a
+  deterministic CPU-only ranker, and improve validation/reproducibility. No
+  hosted LLM or network call is used during candidate ranking.
+
+methodology_summary: |
+  Deterministic rule-based ranker for a founding Senior AI Engineer JD. It
+  combines title/seniority fit, production retrieval/search/recommendation
+  evidence from career text, trusted skill evidence weighted by proficiency,
+  duration, endorsements and assessments, product-company background, location
+  fit, and Redrob availability signals. Strong penalties handle keyword
+  stuffing, services-only backgrounds without product evidence, pure research
+  or framework-demo profiles, inconsistent dates, unsupported expert skills,
+  and CV/speech-heavy profiles without NLP/IR depth. Runtime is under one
+  minute for 100k candidates on CPU and uses only Python standard library.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

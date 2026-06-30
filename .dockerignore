@@ -1,0 +1,11 @@
+.git
+.DS_Store
+__pycache__/
+*.pyc
+
+# Keep the image light. Mount the full candidate pool at runtime instead.
+candidates.jsonl
+candidates.jsonl.gz
+submission.csv
+docker-output/
+*.docx

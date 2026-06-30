@@ -1,0 +1,8 @@
+services:
+  redrob-ranker:
+    build: .
+    image: redrob-ranker:latest
+    volumes:
+      - ./candidates.jsonl:/data/candidates.jsonl:ro
+      - ./docker-output:/out
+    command: ["--candidates", "/data/candidates.jsonl", "--out", "/out/submission.csv"]
