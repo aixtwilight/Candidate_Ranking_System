@@ -5,11 +5,14 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-COPY rank.py validate_submission.py requirements.txt README.md ./
-COPY sample_candidates.json candidate_schema.json ./
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
 
 RUN mkdir -p /data /out \
-    && python -m compileall rank.py validate_submission.py
+    && python -m compileall rank.py validate_submission.py app.py
 
-ENTRYPOINT ["python", "rank.py"]
-CMD ["--candidates", "/data/candidates.jsonl", "--out", "/out/submission.csv"]
+EXPOSE 7860
+
+ENTRYPOINT ["python", "app.py"]

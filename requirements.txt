@@ -1,1 +1,1 @@
-# No third-party dependencies.
+gradio>=4.44,<6
