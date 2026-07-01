@@ -11,7 +11,7 @@ primary_contact:
 team_members:
   - name: "Manpreetkaur Sachdev"
     email: "manpreetkaursachdev2006@gmail.com"
-    role: "AI/ML Engineer"
+    role: "AI/ML Engineer & Team Lead"
 
   - name: "Sahil MK Bharati"
     email: "aixtwilight@gmail.com"
@@ -30,8 +30,8 @@ compute:
   platform: "Local macOS arm64 workstation"
   cpu_cores: 8
   ram_gb: 8
-  python_version: "3.14.6"
-  os: "macOS 26.5.1"
+  python_version: "3.14.5"
+  os: "macOS 26.5.2"
   uses_gpu_for_inference: false
   has_network_during_ranking: false
   pre_computation_required: false
@@ -41,9 +41,10 @@ ai_tools_used:
   - "ChatGPT"
 
 ai_usage_summary: |
-  Used ChatGPT to inspect the challenge docs, implement and review a
-  deterministic CPU-only ranker, and improve validation/reproducibility. No
-  hosted LLM or network call is used during candidate ranking.
+  Used ChatGPT for documentation review, implementation guidance, debugging,
+  code review, Docker deployment support, and reproducibility improvements.
+  The ranking system remains deterministic, CPU-only, and performs no hosted
+  LLM inference or network calls during candidate ranking
 
 methodology_summary: |
   Deterministic rule-based ranker for a founding Senior AI Engineer JD. It
