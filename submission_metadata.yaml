@@ -39,10 +39,9 @@ compute:
 
 ai_tools_used:
   - "ChatGPT"
-  - "Claude"
 
 ai_usage_summary: |
-  Used ChatGPT/Codex to inspect the challenge docs, implement and review a
+  Used ChatGPT to inspect the challenge docs, implement and review a
   deterministic CPU-only ranker, and improve validation/reproducibility. No
   hosted LLM or network call is used during candidate ranking.
 
