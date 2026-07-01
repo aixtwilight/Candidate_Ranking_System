@@ -79,3 +79,8 @@ The job description is for a founding Senior AI Engineer focused on production r
 - Risk controls: penalties for keyword-stuffing profiles, inconsistent dates, unsupported expert skills, non-target titles with many AI skills but little career evidence, and CV/speech-heavy profiles without NLP/IR evidence.
 
 The output score is the model's relative fit score after a monotonic sigmoid transform; it is useful for ordering but should not be read as a calibrated probability of hire. The output reasoning is generated from the same features used for ranking, so each row references facts that exist in the candidate profile and notes obvious concerns such as notice period or low recruiter response rate.
+
+## 🚀 Live Demo
+
+Hugging Face Space:
+https://huggingface.co/spaces/MkSachdev/candidate-ranking-system
