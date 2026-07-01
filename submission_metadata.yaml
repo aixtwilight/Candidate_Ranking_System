@@ -23,7 +23,7 @@ team_members:
 
 
 github_repo: "https://github.com/aixtwilight/Candidate_Ranking_System"
-sandbox_link: "https://huggingface.co/spaces/TODO_USERNAME/redrob-ranker"
+sandbox_link: "https://huggingface.co/spaces/MkSachdev/candidate-ranking-system"
 reproduce_command: "python3 rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 compute:
